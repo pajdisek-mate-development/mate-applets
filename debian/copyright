@@ -1,43 +1,286 @@
-This work was packaged for Debian by:
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mate-applets
+Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
+Source: http://pub.mate-desktop.org/releases/
 
-    Stefano Karapetsas <stefano@karapetsas.com> on Tue, 08 Nov 2011 02:52:56 +0100
+Files: autogen.sh
+       charpick/charpick.c
+       charpick/charpick.h
+       charpick/properties.c
+       invest-applet/invest/__init__.py
+       invest-applet/invest/applet.py
+       invest-applet/invest/chart.py
+       invest-applet/invest/currencies.py
+       invest-applet/invest/help.py
+       invest-applet/invest/invest-applet.py
+       invest-applet/invest/networkmanager.py
+       invest-applet/invest/preferences.py
+       invest-applet/invest/quotes.py
+       invest-applet/invest/test.py
+       invest-applet/invest/widgets.py
+       mateweather/main.c
+       mateweather/mateweather-about.c
+       mateweather/mateweather-about.h
+       mateweather/mateweather-applet.c
+       mateweather/mateweather-applet.h
+       mateweather/mateweather-dialog.c
+       mateweather/mateweather-dialog.h
+       mateweather/mateweather-pref.c
+       mateweather/mateweather-pref.h
+       mateweather/mateweather.h
+       multiload/autoscaler.c
+       multiload/autoscaler.h
+       multiload/global.h
+       multiload/linux-proc.c
+       multiload/linux-proc.h
+       multiload/load-graph.c
+       multiload/load-graph.h
+       multiload/netspeed.c
+       multiload/netspeed.h
+       timer-applet/src/timerapplet/__init__.py
+       trashapplet/src/xstuff.h
+Copyright: *No copyright*
+License: UNKNOWN
+Specified files lack copyright/license information in the
+(non-present) file header.
 
-It was downloaded from:
+Files: cpufreq/src/cpufreq-applet.c
+       cpufreq/src/cpufreq-applet.h
+       cpufreq/src/cpufreq-monitor-cpuinfo.c
+       cpufreq/src/cpufreq-monitor-cpuinfo.h
+       cpufreq/src/cpufreq-monitor-factory.c
+       cpufreq/src/cpufreq-monitor-factory.h
+       cpufreq/src/cpufreq-monitor-libcpufreq.c
+       cpufreq/src/cpufreq-monitor-libcpufreq.h
+       cpufreq/src/cpufreq-monitor-procfs.c
+       cpufreq/src/cpufreq-monitor-procfs.h
+       cpufreq/src/cpufreq-monitor-sysfs.c
+       cpufreq/src/cpufreq-monitor-sysfs.h
+       cpufreq/src/cpufreq-monitor.c
+       cpufreq/src/cpufreq-monitor.h
+       cpufreq/src/cpufreq-popup.c
+       cpufreq/src/cpufreq-popup.h
+       cpufreq/src/cpufreq-prefs.c
+       cpufreq/src/cpufreq-prefs.h
+       cpufreq/src/cpufreq-selector.c
+       cpufreq/src/cpufreq-selector.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector-factory.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector-factory.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector-libcpufreq.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector-libcpufreq.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector-procfs.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector-procfs.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector-service.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector-service.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector-sysfs.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector-sysfs.h
+       cpufreq/src/cpufreq-selector/cpufreq-selector.c
+       cpufreq/src/cpufreq-selector/cpufreq-selector.h
+       cpufreq/src/cpufreq-selector/main.c
+       cpufreq/src/cpufreq-utils.c
+       cpufreq/src/cpufreq-utils.h
+Copyright: 2004, 2006, 2008 Carlos Garcia Campos <carlosgc@gnome.org>
+License: GPL-2+
 
-    <https://github.com/Perberos/Mate-Desktop-Extra>
+Files: timer-applet/src/timerapplet/config.py
+       timer-applet/src/timerapplet/controllers/GlobalController.py
+       timer-applet/src/timerapplet/controllers/TimerManagerService.py
+       timer-applet/src/timerapplet/controllers/TimerService.py
+       timer-applet/src/timerapplet/controllers/__init__.py
+       timer-applet/src/timerapplet/core/AppletMateConfWrapper.py
+       timer-applet/src/timerapplet/core/__init__.py
+       timer-applet/src/timerapplet/ui/AddEditPresetDialog.py
+       timer-applet/src/timerapplet/ui/ContinueTimerDialog.py
+       timer-applet/src/timerapplet/ui/DurationChooser.py
+       timer-applet/src/timerapplet/ui/ManagePresetsDialog.py
+       timer-applet/src/timerapplet/ui/Notifier.py
+       timer-applet/src/timerapplet/ui/PieMeter.py
+       timer-applet/src/timerapplet/ui/PreferencesDialog.py
+       timer-applet/src/timerapplet/ui/PulseButton.py
+       timer-applet/src/timerapplet/ui/ScrollableButtonList.py
+       timer-applet/src/timerapplet/ui/StatusButton.py
+       timer-applet/src/timerapplet/ui/__init__.py
+Copyright: 2008, Jimmy Do <jimmydo@users.sourceforge.net>
+License: GPL-2+
 
-Upstream Author:
+Files: stickynotes/stickynotes.c
+       stickynotes/stickynotes.h
+       stickynotes/stickynotes_applet.c
+       stickynotes/stickynotes_applet.h
+       stickynotes/stickynotes_applet_callbacks.c
+       stickynotes/stickynotes_applet_callbacks.h
+       stickynotes/stickynotes_callbacks.c
+       stickynotes/stickynotes_callbacks.h
+       stickynotes/util.c
+       stickynotes/util.h
+Copyright: 2002-2003, Loban A Rahman
+License: GPL-2+
 
-    Perberos <perberos@gmail.com>
+Files: timer-applet/src/timerapplet/controllers/TimerApplet.py
+       timer-applet/src/timerapplet/core/PresetsStore.py
+       timer-applet/src/timerapplet/core/Timer.py
+       timer-applet/src/timerapplet/ui/StartTimerDialog.py
+       timer-applet/src/timerapplet/utils.py
+Copyright: 2008, Jimmy Do <jimmydo@users.sourceforge.net>
+           2010, Kenny Meyer <knny.myer@gmail.com>
+License: GPL-2+
 
-Copyright:
+Files: battstat/acpi-freebsd.c
+       battstat/acpi-linux.c
+       battstat/acpi-linux.h
+       battstat/pixmaps.h
+Copyright: 2000, Jörgen Pehrson <jp@spektr.eu.org>
+License: GPL-2+
 
-    Copyright (C) 2011 Perberos
+Files: drivemount/drive-button.h
+       drivemount/drive-list.h
+       drivemount/drivemount.c
+Copyright: 2004, Canonical Ltd
+License: GPL-2+
 
-License:
+Files: drivemount/drive-button.c
+       drivemount/drive-list.c
+Copyright: 2004, Canonical Ltd
+           2008, Pierre Ossman
+License: GPL-2+
 
-    This package is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+Files: modemlights/modem-applet.c
+       modemlights/modem-applet.h
+Copyright: 2004, Carlos Garnacho
+License: GPL-2+
 
-    This package is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+Files: geyes/geyes.h
+       geyes/themes.c
+Copyright: 1999, Dave Camp <dave@davec.dhs.org>
+License: GPL-2+
 
-    You should have received a copy of the GNU General Public License
-    along with this program. If not, see <http://www.gnu.org/licenses/>
+Files: battstat/battstat_applet.c
+       battstat/power-management.c
+Copyright: 2000, JÃ¶rgen Pehrson <jp@spektr.eu.org>
+           2002, 2005 Free Software Foundation
+License: GPL-2+
 
+Files: battstat/battstat-upower.c
+       battstat/battstat-upower.h
+Copyright: 2005, Ryan Lortie <desrt@desrt.ca>
+           2010, Joachim Breitner <mail@joachim-breitner.de>
+License: GPL-2+
+
+Files: battstat/battstat.h
+       battstat/properties.c
+Copyright: 2000, JÃ¶rgen Pehrson <jp@spektr.eu.org>
+License: GPL-2+
+
+Files: timer-applet/src/timerapplet/logger.py
+       timer-applet/src/timerapplet/ui/StartNextTimerDialog.py
+Copyright: 2010, Kenny Meyer <knny.myer@gmail.com>
+License: GPL-2+
+
+Files: trashapplet/src/trash-empty.c
+       trashapplet/src/trash-empty.h
+Copyright: 2008, Ryan Lortie
+License: GPL-2+
+
+Files: battstat/battstat-hal.c
+       battstat/battstat-hal.h
+Copyright: 2005, Ryan Lortie <desrt@desrt.ca>
+License: GPL-2+
+
+Files: accessx-status/applet.c
+       accessx-status/applet.h
+Copyright: 2003, 2004 Sun Microsystems Inc
+License: LGPL-2+
+
+Files: multiload/main.c
+       multiload/properties.c
+Copyright: 1997, 2002 The Free Software Foundation
+License: UNKNOWN
+Specified files lack copyright/license information in the
+(non-present) file header.
+
+Files: geyes/geyes.c
+Copyright: 1999, Dave Camp
+License: GPL-2+
+
+Files: null_applet/null_applet.c
+Copyright: 2004, Davyd Madeley
+License: GPL-2+
+
+Files: battstat/acpi-freebsd.h
+Copyright: 2004, Joe Marcus Clarke <marcus@FreeBSD.org>
+License: GPL-2+
+
+Files: trashapplet/src/trashapplet.c
+Copyright: 2004, Michiel Sikkes <michiel@eyesopened.nl>
+License: GPL-2+
+
+Files: battstat/apmlib/apmlib.c
+Copyright: 1996-1997, Rickard E. Faith (faith@acm.org)
+License: LGPL-2+
+
+Files: battstat/apmlib/apm.h
+Copyright: 1996, Rickard E. Faith (r.faith@ieee.org)
+License: LGPL-2+
+
+Files: trashapplet/src/xstuff.c
+Copyright: 1997-2002, Alfredo K. Kojima
+           2000-2001, Eazel, Inc
+License: UNKNOWN
+Specified files lack copyright/license information in the
+(non-present) file header.
+
+Files: invest-applet/invest/about.py
+Copyright: 2004-2005, Raphael Slinckx.\n 2009-2010, Enrico Minack."
+License: UNKNOWN
+Specified files lack copyright/license information in the
+(non-present) file header.
+
+Files: debian/*
+Copyright: 2011 Stefano Karapetsas <stefano@karapetsas.com>
+           2013 Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+
+
+License: GPL-2+
+ 
+This package is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your opinion) any later version.
+.
+This package is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Genaral Public License for more details.
+.
+You should have received a copy og the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>
+.
 On Debian systems, the complete text of the GNU General
 Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
-The Debian packaging is:
+License: LGPL-2+
 
-    Copyright (C) 2011 Stefano Karapetsas <stefano@karapetsas.com>
+  The licenses for most software are designed to take away your
+freedom to share and change it. By contrast, the GNU General Public
+Licenses are intended to guarantee your freedom to share and change
+free software--to make sure the software is free for all its users.
 
-you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+  This license, the Library General Public License, applies to some
+specially designated Free Software Foundation software, and to any
+other libraries whose authors decide to use it. You can use it for
+your libraries, too.
 
+  When we speak of free software, we are referring to freedom, not
+price. Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+this service if you wish), that you receive source code or can get it
+if you want it, that you can change the software or use pieces of it
+in new free programs; and that you know you can do these things.
+
+  To protect your rights, we need to make restrictions that forbid
+anyone to deny you these rights or to ask you to surrender the rights.
+These restrictions translate to certain responsibilities for you if
+you distribute copies of the library, or if you modify it.
+.
+On Debian systems, the complete text of the GNU General
+Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
