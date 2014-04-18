@@ -1,7 +1,5 @@
-mate-applets (1.6.2-1) UNRELEASED; urgency=low
+mate-applets (1.8.0-1) UNRELEASED; urgency=low
 
   * Initial release. (Closes: #734888).
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 12 Apr 2013 00:04:10 +0200
-
-
+ -- Vangelis Mouhtsis <vangelis@gnugr.org>  Fri, 18 Apr 2014 17:34:09 +0300
