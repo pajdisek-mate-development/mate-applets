@@ -45,7 +45,8 @@ $(PKG)_$(VER)$(DTYPE).orig.tar.xz:
 	cd $(PKG)-$(VER) \
 	    && $(RM) -r -v \
 	        */docs/ \
-	        */help/
+	        */help/ \
+	        COPYING-DOCS
 	$(RM) -v $(PKG)_$(VER).orig.tar.*
 	@echo "# Packing..."
 	find -L "$(PKG)-$(VER)" -xdev -type f -print | sort \
