@@ -1,5 +1,5 @@
 Source: mate-applets
-Section: mate
+Section: x11 
 Priority: optional
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
