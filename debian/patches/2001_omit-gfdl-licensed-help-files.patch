@@ -1,0 +1,144 @@
+Description:  Don't build non-DFSG (GFDL 1.1 licensed) help/doc files
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+--- a/accessx-status/Makefile.am
++++ b/accessx-status/Makefile.am
+@@ -1,4 +1,4 @@
+-SUBDIRS = docs pixmaps
++SUBDIRS = pixmaps
+ 
+ AM_CPPFLAGS = \
+ 	$(MATE_APPLETS4_CFLAGS) \
+--- a/battstat/Makefile.am
++++ b/battstat/Makefile.am
+@@ -19,9 +19,9 @@
+ APMINC = 
+ endif
+ 
+-SUBDIRS = docs sounds $(APMDIR)
++SUBDIRS = sounds $(APMDIR)
+ 
+-DIST_SUBDIRS = docs sounds apmlib
++DIST_SUBDIRS = sounds apmlib
+ 
+ AM_CPPFLAGS =					\
+ 	$(MATE_APPLETS4_CFLAGS)		\
+--- a/charpick/Makefile.am
++++ b/charpick/Makefile.am
+@@ -1,5 +1,3 @@
+-SUBDIRS = help
+-
+ AM_CPPFLAGS =					\
+ 	-I.					\
+ 	-I$(srcdir)				\
+--- a/configure.ac
++++ b/configure.ac
+@@ -640,42 +640,31 @@
+ Makefile
+ po/Makefile.in
+ accessx-status/Makefile
+-accessx-status/docs/Makefile
+ accessx-status/pixmaps/Makefile
+ drivemount/Makefile
+-drivemount/help/Makefile
+ multiload/Makefile
+-multiload/docs/Makefile
+ charpick/Makefile
+-charpick/help/Makefile
+ invest-applet/Makefile
+-invest-applet/docs/Makefile
+ invest-applet/invest/Makefile
+ invest-applet/invest/defs.py
+ invest-applet/data/Makefile
+ invest-applet/data/art/Makefile
+ mateweather/Makefile
+-mateweather/docs/Makefile
+ geyes/Makefile
+ geyes/themes/Makefile
+-geyes/docs/Makefile
+ battstat/Makefile
+ battstat/apmlib/Makefile
+ battstat/sounds/Makefile
+-battstat/docs/Makefile
+ man/Makefile
+ stickynotes/Makefile
+ stickynotes/pixmaps/Makefile
+-stickynotes/docs/Makefile
+ stickynotes/data/Makefile
+ trashapplet/Makefile
+ trashapplet/src/Makefile
+-trashapplet/docs/Makefile
+ cpufreq/Makefile
+ cpufreq/src/Makefile
+ cpufreq/src/cpufreq-selector/Makefile
+ cpufreq/pixmaps/Makefile
+-cpufreq/help/Makefile
+ timerapplet/Makefile
+ command/Makefile
+ null_applet/Makefile
+--- a/cpufreq/Makefile.am
++++ b/cpufreq/Makefile.am
+@@ -1,4 +1,4 @@
+-SUBDIRS = help pixmaps src
++SUBDIRS = pixmaps src
+ 
+ @INTLTOOL_XML_NOMERGE_RULE@
+ gsettings_SCHEMAS = org.mate.panel.applet.cpufreq.gschema.xml
+--- a/drivemount/Makefile.am
++++ b/drivemount/Makefile.am
+@@ -1,5 +1,3 @@
+-SUBDIRS = help
+-
+ AM_CPPFLAGS =					\
+ 	-I.					\
+ 	-I$(srcdir)				\
+--- a/geyes/Makefile.am
++++ b/geyes/Makefile.am
+@@ -1,4 +1,4 @@
+-SUBDIRS = themes docs
++SUBDIRS = themes
+ 
+ AM_CPPFLAGS =						\
+ 	-I.						\
+--- a/invest-applet/Makefile.am
++++ b/invest-applet/Makefile.am
+@@ -1,3 +1,3 @@
+-SUBDIRS = invest data docs
++SUBDIRS = invest data
+ 
+ -include $(top_srcdir)/git.mk
+--- a/mateweather/Makefile.am
++++ b/mateweather/Makefile.am
+@@ -1,7 +1,5 @@
+ ## Process this file with automake to produce Makefile.in
+ 
+-SUBDIRS = docs
+-
+ AM_CPPFLAGS =					\
+ 	-I$(srcdir)				\
+ 	-I$(top_srcdir)				\
+--- a/multiload/Makefile.am
++++ b/multiload/Makefile.am
+@@ -1,5 +1,3 @@
+-SUBDIRS = docs
+-
+ AM_CPPFLAGS =			\
+ 	-I$(srcdir)		\
+ 	-DMULTILOAD_MENU_UI_DIR=\""$(uidir)"\" \
+--- a/stickynotes/Makefile.am
++++ b/stickynotes/Makefile.am
+@@ -1,6 +1,6 @@
+ ## Process this file with automake to produce Makefile.in
+ 
+-SUBDIRS = pixmaps docs data
++SUBDIRS = pixmaps data
+ 
+ ui_files = stickynotes-applet-menu.xml
+ builder_files = stickynotes.ui
+--- a/trashapplet/Makefile.am
++++ b/trashapplet/Makefile.am
+@@ -1,4 +1,4 @@
+-SUBDIRS = src docs
++SUBDIRS = src
+ 
+ appletdir       = $(datadir)/mate-panel/applets
+ applet_in_files = org.mate.applets.TrashApplet.mate-panel-applet.in
