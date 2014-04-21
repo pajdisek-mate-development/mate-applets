@@ -1,7 +1,5 @@
-mate-applets (1.8.0+dfsg1-1) UNRELEASED; urgency=low
+mate-applets (1.8.0+dfsg1-1) unstable; urgency=low
 
   * Initial release. (Closes: #734888).
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Fri, 12 Apr 2013 00:04:10 +0200
-
-
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Apr 2014 13:57:07 +0200

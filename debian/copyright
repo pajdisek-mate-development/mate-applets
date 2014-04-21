@@ -3,10 +3,49 @@ Upstream-Name: mate-applets
 Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
 Source: http://git.mate-desktop.org/mate-applets/
 
-Files: autogen.sh
+Files: accessx-status/Makefile.am
+       accessx-status/*.in
+       accessx-status/*.xml
+       accessx-status/pixmaps/Makefile.am
+       accessx-status/pixmaps/*.png
+       battstat/sounds/Makefile.am
+       battstat/sounds/*.in
+       battstat/apmlib/Makefile.am
+       battstat/Makefile.am
+       battstat/*.in
+       battstat/*.ui
+       battstat/*.xml
+       charpick/Makefile.am
        charpick/charpick.c
        charpick/charpick.h
        charpick/properties.c
+       charpick/*.in
+       charpick/*.xml
+       command/Makefile.am
+       command/*.in
+       cpufreq/Makefile.am
+       cpufreq/*.in
+       cpufreq/*.ui
+       cpufreq/*.xml
+       cpufreq/src/Makefile.am
+       cpufreq/src/cpufreq-selector/Makefile.am
+       cpufreq/src/cpufreq-selector/*.xml
+       cpufreq/src/cpufreq-selector/*.conf
+       cpufreq/src/cpufreq-selector/*.in
+       cpufreq/pixmaps/Makefile.am
+       cpufreq/pixmaps/*.png
+       cpufreq/pixmaps/*.svg
+       drivemount/Makefile.am
+       drivemount/*.in
+       drivemount/*.xml
+       geyes/themes/Makefile.am
+       geyes/themes/*/*
+       geyes/Makefile.am
+       geyes/*.in
+       geyes/*.xml
+       geyes/*.png
+       geyes/*.svg
+       invest-applet/invest/Makefile.am
        invest-applet/invest/__init__.py
        invest-applet/invest/applet.py
        invest-applet/invest/chart.py
@@ -18,6 +57,18 @@ Files: autogen.sh
        invest-applet/invest/quotes.py
        invest-applet/invest/test.py
        invest-applet/invest/widgets.py
+       invest-applet/mate-invest-chart
+       invest-applet/data/Makefile.am
+       invest-applet/data/*.in
+       invest-applet/data/*.ui
+       invest-applet/data/*.xml
+       invest-applet/data/art/Makefile.am
+       invest-applet/data/art/*.png
+       invest-applet/data/art/*.svg
+       invest-applet/Makefile.am
+       m4/*.,4
+       man/Makefile.am
+       mateweather/Makefile.am
        mateweather/main.c
        mateweather/mateweather-about.c
        mateweather/mateweather-about.h
@@ -28,6 +79,9 @@ Files: autogen.sh
        mateweather/mateweather-pref.c
        mateweather/mateweather-pref.h
        mateweather/mateweather.h
+       mateweather/*.in
+       mateweather/*.xml
+       multiload/Makefile.am
        multiload/autoscaler.c
        multiload/autoscaler.h
        multiload/global.h
@@ -37,8 +91,33 @@ Files: autogen.sh
        multiload/load-graph.h
        multiload/netspeed.c
        multiload/netspeed.h
-       timer-applet/src/timerapplet/__init__.py
+       multiload/*.in
+       multiload/*.xml
+       null_applet/Makefile.am
+       null_applet/*.in
+       po/LINGUAS
+       po/POTFILES.*
+       stickynotes/data/Makefile.am
+       stickynotes/data/*.in
+       stickynotes/pixmaps/Makefile.am
+       stickynotes/pixmaps/*.png
+       stickynotes/pixmaps/*.svg
+       stickynotes/Makefile.am
+       stickynotes/*.convert
+       stickynotes/*.in
+       stickynotes/*.ui
+       stickynotes/*.xml
+       timerapplet/Makefile.am
+       timerapplet/*.in
+       trashapplet/src/Makefile.am
        trashapplet/src/xstuff.h
+       trashapplet/Makefile.am
+       trashapplet/*.in
+       trashapplet/*.ui
+       trashapplet/*.xml
+       Makefile.am
+       autogen.sh
+       configure.ac
 Copyright: *No copyright*
 License: GPL-2+
 Comment:
@@ -157,7 +236,7 @@ License: GPL-2+
 Files: battstat/battstat_applet.c
        battstat/power-management.c
 Copyright: 2000, Jörgen Pehrson <jp@spektr.eu.org>
-           2002-2005, Free Software Foundation
+           2002-2005, Free Software Foundation, Inc.
 License: GPL-2+
 
 Files: battstat/battstat-upower.c
@@ -193,7 +272,7 @@ License: LGPL-2+
 
 Files: multiload/main.c
        multiload/properties.c
-Copyright: 1997-2002, The Free Software Foundation
+Copyright: 1997-2002, The Free Software Foundation, Inc.
 License: GPL-2+
 Comment:
  Using license from COPYING file.
@@ -224,7 +303,7 @@ License: LGPL-2+
 
 Files: trashapplet/src/xstuff.c
 Copyright: 1997-2002, Alfredo K. Kojima
-           2000-2001, Eazel, Inc
+           2000-2001, Eazel, Inc.
 License: GPL-2+
 Comment:
  Using license from COPYING file.
@@ -232,6 +311,15 @@ Comment:
 Files: invest-applet/invest/about.py
 Copyright: 2004-2005, Raphael Slinckx
            2009-2010, Enrico Minack
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: po/*.po
+Copyright: 2007, THE mate-applets COPYRIGHT HOLDER
+           1998-2006, Free Software Foundation, Inc.
+           2005, Norayr Chilingaryan
+           2009-2010, The Gnome Foundation
 License: GPL-2+
 Comment:
  Using license from COPYING file.
