@@ -66,7 +66,7 @@ Files: accessx-status/Makefile.am
        invest-applet/data/art/*.png
        invest-applet/data/art/*.svg
        invest-applet/Makefile.am
-       m4/*.,4
+       m4/*.m4
        man/Makefile.am
        mateweather/Makefile.am
        mateweather/main.c
