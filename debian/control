@@ -1,5 +1,5 @@
 Source: mate-applets
-Section: mate
+Section: x11 
 Priority: optional
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
@@ -8,14 +8,14 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
 Standards-Version: 3.9.5
 Build-Depends: cdbs,
-               debhelper (>= 8),
+               debhelper (>= 9),
                libgtk2.0-dev,
                libglib2.0-dev,
-               libmatepanelapplet-dev,
+               libmate-panel-applet-dev,
                libgtop2-dev,
                libxklavier-dev,
-               libmatewnck-dev,
-               libmatedesktop-dev,
+               libwnck-dev,
+               libmate-desktop-dev,
                libnotify-dev,
                libdbus-1-dev,
                libdbus-glib-1-dev,
@@ -34,8 +34,6 @@ Build-Depends: cdbs,
                docbook-xsl,
                docbook-to-man,
                docbook-utils,
-               mate-doc-utils,
-               mate-doc-utils-gnome | gnome-doc-utils,
                network-manager-dev,
                libgstreamer0.10-dev,
                libgstreamer-plugins-base0.10-dev,
@@ -49,7 +47,9 @@ Build-Depends: cdbs,
                libavahi-common-dev,
                libavahi-glib-dev,
                mate-common,
-               libsoup2.4-dev
+               libsoup2.4-dev,
+               yelp-tools,
+               libdconf-dev,
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-applets.git;a=summary
 Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-applets.git
@@ -155,7 +155,7 @@ Architecture: any
 Depends: ${misc:Depends},
          mate-applets (= ${binary:Version})
 Description: Various applets for the MATE panel (debugging symbols)
- This package contains debugging symbols for mate-applets package.
- It is provided to help debugging problem in the applets. The debugging
- symbols are installed in /usr/lib/debug and will automatically be used
- by gdb.
+ This package contains debugging symbols for mate-applets.
+ .
+ The debugging symbols are installed in /usr/lib/debug and will
+ automatically be used by gdb.

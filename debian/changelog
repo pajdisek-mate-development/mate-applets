@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 mate-applets (1.8.0-1) UNRELEASED; urgency=low
 
   * Initial release. (Closes: #734888).
 
  -- Vangelis Mouhtsis <vangelis@gnugr.org>  Fri, 18 Apr 2014 17:34:09 +0300
+=======
+mate-applets (1.8.0+dfsg1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #734888).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 21 Apr 2014 13:57:07 +0200
+>>>>>>> bb4b4c5019deb87fbc0ff0e7ea126804c31daba5

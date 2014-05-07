@@ -1,12 +1,51 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: mate-applets
 Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
-Source: http://pub.mate-desktop.org/releases/
+Source: http://git.mate-desktop.org/mate-applets/
 
-Files: autogen.sh
+Files: accessx-status/Makefile.am
+       accessx-status/*.in
+       accessx-status/*.xml
+       accessx-status/pixmaps/Makefile.am
+       accessx-status/pixmaps/*.png
+       battstat/sounds/Makefile.am
+       battstat/sounds/*.in
+       battstat/apmlib/Makefile.am
+       battstat/Makefile.am
+       battstat/*.in
+       battstat/*.ui
+       battstat/*.xml
+       charpick/Makefile.am
        charpick/charpick.c
        charpick/charpick.h
        charpick/properties.c
+       charpick/*.in
+       charpick/*.xml
+       command/Makefile.am
+       command/*.in
+       cpufreq/Makefile.am
+       cpufreq/*.in
+       cpufreq/*.ui
+       cpufreq/*.xml
+       cpufreq/src/Makefile.am
+       cpufreq/src/cpufreq-selector/Makefile.am
+       cpufreq/src/cpufreq-selector/*.xml
+       cpufreq/src/cpufreq-selector/*.conf
+       cpufreq/src/cpufreq-selector/*.in
+       cpufreq/pixmaps/Makefile.am
+       cpufreq/pixmaps/*.png
+       cpufreq/pixmaps/*.svg
+       drivemount/Makefile.am
+       drivemount/*.in
+       drivemount/*.xml
+       geyes/themes/Makefile.am
+       geyes/themes/*/*
+       geyes/Makefile.am
+       geyes/*.in
+       geyes/*.xml
+       geyes/*.png
+       geyes/*.svg
+       invest-applet/invest/Makefile.am
        invest-applet/invest/__init__.py
        invest-applet/invest/applet.py
        invest-applet/invest/chart.py
@@ -18,6 +57,18 @@ Files: autogen.sh
        invest-applet/invest/quotes.py
        invest-applet/invest/test.py
        invest-applet/invest/widgets.py
+       invest-applet/mate-invest-chart
+       invest-applet/data/Makefile.am
+       invest-applet/data/*.in
+       invest-applet/data/*.ui
+       invest-applet/data/*.xml
+       invest-applet/data/art/Makefile.am
+       invest-applet/data/art/*.png
+       invest-applet/data/art/*.svg
+       invest-applet/Makefile.am
+       m4/*.m4
+       man/Makefile.am
+       mateweather/Makefile.am
        mateweather/main.c
        mateweather/mateweather-about.c
        mateweather/mateweather-about.h
@@ -28,6 +79,9 @@ Files: autogen.sh
        mateweather/mateweather-pref.c
        mateweather/mateweather-pref.h
        mateweather/mateweather.h
+       mateweather/*.in
+       mateweather/*.xml
+       multiload/Makefile.am
        multiload/autoscaler.c
        multiload/autoscaler.h
        multiload/global.h
@@ -37,12 +91,37 @@ Files: autogen.sh
        multiload/load-graph.h
        multiload/netspeed.c
        multiload/netspeed.h
-       timer-applet/src/timerapplet/__init__.py
+       multiload/*.in
+       multiload/*.xml
+       null_applet/Makefile.am
+       null_applet/*.in
+       po/LINGUAS
+       po/POTFILES.*
+       stickynotes/data/Makefile.am
+       stickynotes/data/*.in
+       stickynotes/pixmaps/Makefile.am
+       stickynotes/pixmaps/*.png
+       stickynotes/pixmaps/*.svg
+       stickynotes/Makefile.am
+       stickynotes/*.convert
+       stickynotes/*.in
+       stickynotes/*.ui
+       stickynotes/*.xml
+       timerapplet/Makefile.am
+       timerapplet/*.in
+       trashapplet/src/Makefile.am
        trashapplet/src/xstuff.h
+       trashapplet/Makefile.am
+       trashapplet/*.in
+       trashapplet/*.ui
+       trashapplet/*.xml
+       Makefile.am
+       autogen.sh
+       configure.ac
 Copyright: *No copyright*
-License: UNKNOWN
-Specified files lack copyright/license information in the
-(non-present) file header.
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
 
 Files: cpufreq/src/cpufreq-applet.c
        cpufreq/src/cpufreq-applet.h
@@ -79,7 +158,7 @@ Files: cpufreq/src/cpufreq-applet.c
        cpufreq/src/cpufreq-selector/main.c
        cpufreq/src/cpufreq-utils.c
        cpufreq/src/cpufreq-utils.h
-Copyright: 2004, 2006, 2008 Carlos Garcia Campos <carlosgc@gnome.org>
+Copyright: 2004-2008, Carlos Garcia Campos <carlosgc@gnome.org>
 License: GPL-2+
 
 Files: timer-applet/src/timerapplet/config.py
@@ -135,12 +214,12 @@ License: GPL-2+
 Files: drivemount/drive-button.h
        drivemount/drive-list.h
        drivemount/drivemount.c
-Copyright: 2004, Canonical Ltd
+Copyright: 2004, Canonical Ltd.
 License: GPL-2+
 
 Files: drivemount/drive-button.c
        drivemount/drive-list.c
-Copyright: 2004, Canonical Ltd
+Copyright: 2004, Canonical Ltd.
            2008, Pierre Ossman
 License: GPL-2+
 
@@ -156,8 +235,8 @@ License: GPL-2+
 
 Files: battstat/battstat_applet.c
        battstat/power-management.c
-Copyright: 2000, JÃ¶rgen Pehrson <jp@spektr.eu.org>
-           2002, 2005 Free Software Foundation
+Copyright: 2000, Jörgen Pehrson <jp@spektr.eu.org>
+           2002-2005, Free Software Foundation, Inc.
 License: GPL-2+
 
 Files: battstat/battstat-upower.c
@@ -168,7 +247,7 @@ License: GPL-2+
 
 Files: battstat/battstat.h
        battstat/properties.c
-Copyright: 2000, JÃ¶rgen Pehrson <jp@spektr.eu.org>
+Copyright: 2000, Jörgen Pehrson <jp@spektr.eu.org>
 License: GPL-2+
 
 Files: timer-applet/src/timerapplet/logger.py
@@ -188,15 +267,15 @@ License: GPL-2+
 
 Files: accessx-status/applet.c
        accessx-status/applet.h
-Copyright: 2003, 2004 Sun Microsystems Inc
+Copyright: 2003-2004, Sun Microsystems, Inc.
 License: LGPL-2+
 
 Files: multiload/main.c
        multiload/properties.c
-Copyright: 1997, 2002 The Free Software Foundation
-License: UNKNOWN
-Specified files lack copyright/license information in the
-(non-present) file header.
+Copyright: 1997-2002, The Free Software Foundation, Inc.
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
 
 Files: geyes/geyes.c
 Copyright: 1999, Dave Camp
@@ -215,72 +294,72 @@ Copyright: 2004, Michiel Sikkes <michiel@eyesopened.nl>
 License: GPL-2+
 
 Files: battstat/apmlib/apmlib.c
-Copyright: 1996-1997, Rickard E. Faith (faith@acm.org)
+Copyright: 1996-1997, Rickard E. Faith <faith@acm.org>
 License: LGPL-2+
 
 Files: battstat/apmlib/apm.h
-Copyright: 1996, Rickard E. Faith (r.faith@ieee.org)
+Copyright: 1996, Rickard E. Faith <r.faith@ieee.org>
 License: LGPL-2+
 
 Files: trashapplet/src/xstuff.c
 Copyright: 1997-2002, Alfredo K. Kojima
-           2000-2001, Eazel, Inc
-License: UNKNOWN
-Specified files lack copyright/license information in the
-(non-present) file header.
+           2000-2001, Eazel, Inc.
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
 
 Files: invest-applet/invest/about.py
-Copyright: 2004-2005, Raphael Slinckx.\n 2009-2010, Enrico Minack."
-License: UNKNOWN
-Specified files lack copyright/license information in the
-(non-present) file header.
+Copyright: 2004-2005, Raphael Slinckx
+           2009-2010, Enrico Minack
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
+
+Files: po/*.po
+Copyright: 2007, THE mate-applets COPYRIGHT HOLDER
+           1998-2006, Free Software Foundation, Inc.
+           2005, Norayr Chilingaryan
+           2009-2010, The Gnome Foundation
+License: GPL-2+
+Comment:
+ Using license from COPYING file.
 
 Files: debian/*
-Copyright: 2011 Stefano Karapetsas <stefano@karapetsas.com>
-           2013 Mike Gabriel <sunweaver@debian.org>
-License: GPL-2+
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+ or LGPL-2+
 
 License: GPL-2+
- 
-This package is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your opinion) any later version.
-.
-This package is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU Genaral Public License for more details.
-.
-You should have received a copy og the GNU General Public License
-along with this program. If not, see <http://www.gnu.org/licenses/>
-.
-On Debian systems, the complete text of the GNU General
-Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
 License: LGPL-2+
-
-  The licenses for most software are designed to take away your
-freedom to share and change it. By contrast, the GNU General Public
-Licenses are intended to guarantee your freedom to share and change
-free software--to make sure the software is free for all its users.
-
-  This license, the Library General Public License, applies to some
-specially designated Free Software Foundation software, and to any
-other libraries whose authors decide to use it. You can use it for
-your libraries, too.
-
-  When we speak of free software, we are referring to freedom, not
-price. Our General Public Licenses are designed to make sure that you
-have the freedom to distribute copies of free software (and charge for
-this service if you wish), that you receive source code or can get it
-if you want it, that you can change the software or use pieces of it
-in new free programs; and that you know you can do these things.
-
-  To protect your rights, we need to make restrictions that forbid
-anyone to deny you these rights or to ask you to surrender the rights.
-These restrictions translate to certain responsibilities for you if
-you distribute copies of the library, or if you modify it.
-.
-On Debian systems, the complete text of the GNU General
-Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Library General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ You should have received a copy of the GNU Library General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version LGPL-2 can be found in "/usr/share/common-licenses/LGPL-2".
