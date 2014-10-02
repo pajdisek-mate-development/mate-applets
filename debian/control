@@ -50,6 +50,7 @@ Build-Depends: cdbs,
                libsoup2.4-dev,
                yelp-tools,
                libdconf-dev,
+               libgtksourceview2.0-dev,
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-applets.git;a=summary
 Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-applets.git
