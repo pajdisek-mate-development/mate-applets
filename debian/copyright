@@ -69,7 +69,6 @@ Files: .tx/config
        invest-applet/invest/quotes.py
        invest-applet/invest/test.py
        invest-applet/invest/widgets.py
-       invest-applet/mate-invest-chart
        invest-applet/data/Makefile.am
        invest-applet/data/*.in
        invest-applet/data/*.ui
@@ -200,27 +199,6 @@ Files: cpufreq/src/cpufreq-applet.c
 Copyright: 2004-2008, Carlos Garcia Campos <carlosgc@gnome.org>
 License: GPL-2+
 
-Files: timer-applet/src/timerapplet/config.py
-       timer-applet/src/timerapplet/controllers/GlobalController.py
-       timer-applet/src/timerapplet/controllers/TimerManagerService.py
-       timer-applet/src/timerapplet/controllers/TimerService.py
-       timer-applet/src/timerapplet/controllers/__init__.py
-       timer-applet/src/timerapplet/core/AppletMateConfWrapper.py
-       timer-applet/src/timerapplet/core/__init__.py
-       timer-applet/src/timerapplet/ui/AddEditPresetDialog.py
-       timer-applet/src/timerapplet/ui/ContinueTimerDialog.py
-       timer-applet/src/timerapplet/ui/DurationChooser.py
-       timer-applet/src/timerapplet/ui/ManagePresetsDialog.py
-       timer-applet/src/timerapplet/ui/Notifier.py
-       timer-applet/src/timerapplet/ui/PieMeter.py
-       timer-applet/src/timerapplet/ui/PreferencesDialog.py
-       timer-applet/src/timerapplet/ui/PulseButton.py
-       timer-applet/src/timerapplet/ui/ScrollableButtonList.py
-       timer-applet/src/timerapplet/ui/StatusButton.py
-       timer-applet/src/timerapplet/ui/__init__.py
-Copyright: 2008, Jimmy Do <jimmydo@users.sourceforge.net>
-License: GPL-2+
-
 Files: stickynotes/stickynotes.c
        stickynotes/stickynotes.h
        stickynotes/stickynotes_applet.c
@@ -232,15 +210,6 @@ Files: stickynotes/stickynotes.c
        stickynotes/util.c
        stickynotes/util.h
 Copyright: 2002-2003, Loban A Rahman
-License: GPL-2+
-
-Files: timer-applet/src/timerapplet/controllers/TimerApplet.py
-       timer-applet/src/timerapplet/core/PresetsStore.py
-       timer-applet/src/timerapplet/core/Timer.py
-       timer-applet/src/timerapplet/ui/StartTimerDialog.py
-       timer-applet/src/timerapplet/utils.py
-Copyright: 2008, Jimmy Do <jimmydo@users.sourceforge.net>
-           2010, Kenny Meyer <knny.myer@gmail.com>
 License: GPL-2+
 
 Files: battstat/acpi-freebsd.c
@@ -260,11 +229,6 @@ Files: drivemount/drive-button.c
        drivemount/drive-list.c
 Copyright: 2004, Canonical Ltd.
            2008, Pierre Ossman
-License: GPL-2+
-
-Files: modemlights/modem-applet.c
-       modemlights/modem-applet.h
-Copyright: 2004, Carlos Garnacho
 License: GPL-2+
 
 Files: geyes/geyes.h
@@ -287,11 +251,6 @@ License: GPL-2+
 Files: battstat/battstat.h
        battstat/properties.c
 Copyright: 2000, Jörgen Pehrson <jp@spektr.eu.org>
-License: GPL-2+
-
-Files: timer-applet/src/timerapplet/logger.py
-       timer-applet/src/timerapplet/ui/StartNextTimerDialog.py
-Copyright: 2010, Kenny Meyer <knny.myer@gmail.com>
 License: GPL-2+
 
 Files: trashapplet/src/trash-empty.c
