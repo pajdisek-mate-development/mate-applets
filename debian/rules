@@ -24,11 +24,15 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
                 --disable-timer-applet \
                 --disable-schemas-install
 
-binary-install/mate-applets::
+common-install-indep:: remove-cruft
+common-install-arch:: remove-cruft
+
+remove-cruft::
 	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyc
 	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyo
 	rm -rfv debian/*/usr/lib/python*/dist-packages/timerapplet/*.pyc
 	rm -rfv debian/*/usr/lib/python*/dist-packages/timerapplet/*.pyo
+	rm -rfv debian/*/usr/share/MateConf/gsettings/stickynotes-applet.convert
 
 get-orig-source: $(PKG)_$(VER)$(DTYPE).orig.tar.xz $(info I: $(PKG)_$(VER)$(DTYPE))
 	@
