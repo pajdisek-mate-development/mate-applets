@@ -3,7 +3,10 @@ Upstream-Name: mate-applets
 Upstream-Contact: Stefano Karapetsas <stefano@karapetsas.com>
 Source: http://git.mate-desktop.org/mate-applets/
 
-Files: accessx-status/Makefile.am
+Files: .tx/config
+       accessx-status/AUTHORS
+       accessx-status/COPYING
+       accessx-status/Makefile.am
        accessx-status/*.in
        accessx-status/*.xml
        accessx-status/pixmaps/Makefile.am
@@ -23,7 +26,9 @@ Files: accessx-status/Makefile.am
        charpick/*.xml
        command/Makefile.am
        command/*.in
+       cpufreq/AUTHORS
        cpufreq/Makefile.am
+       cpufreq/README
        cpufreq/*.in
        cpufreq/*.ui
        cpufreq/*.xml
@@ -35,12 +40,17 @@ Files: accessx-status/Makefile.am
        cpufreq/pixmaps/Makefile.am
        cpufreq/pixmaps/*.png
        cpufreq/pixmaps/*.svg
+       drivemount/AUTHORS
        drivemount/Makefile.am
        drivemount/*.in
        drivemount/*.xml
        geyes/themes/Makefile.am
        geyes/themes/*/*
+       geyes/AUTHORS
        geyes/Makefile.am
+       geyes/NEWS
+       geyes/README
+       geyes/README.themes
        geyes/*.in
        geyes/*.xml
        geyes/*.png
@@ -49,9 +59,11 @@ Files: accessx-status/Makefile.am
        invest-applet/invest/__init__.py
        invest-applet/invest/applet.py
        invest-applet/invest/chart.py
+       invest-applet/invest/defs.py.in
        invest-applet/invest/currencies.py
        invest-applet/invest/help.py
        invest-applet/invest/invest-applet.py
+       invest-applet/invest/mate-invest-chart
        invest-applet/invest/networkmanager.py
        invest-applet/invest/preferences.py
        invest-applet/invest/quotes.py
@@ -67,7 +79,23 @@ Files: accessx-status/Makefile.am
        invest-applet/data/art/*.svg
        invest-applet/Makefile.am
        m4/*.m4
+       man/cdplayer_applet.1
+       man/charpick_applet.1
+       man/cpufreq-selector.1
+       man/drivemount_applet.1
+       man/geyes_applet.1
+       man/gkb_applet.1
+       man/gkb_xmmap.1
+       man/invest-chart.1
+       man/mateweather.1
+       man/mini_commander_applet.1
+       man/mixer_applet.1
+       man/multiload_applet.1
+       man/screenshooter_applet.1
+       man/sound-monitor_applet.1
+       man/whereami_applet.1
        man/Makefile.am
+       mateweather/AUTHORS
        mateweather/Makefile.am
        mateweather/main.c
        mateweather/mateweather-about.c
@@ -81,6 +109,7 @@ Files: accessx-status/Makefile.am
        mateweather/mateweather.h
        mateweather/*.in
        mateweather/*.xml
+       multiload/AUTHORS
        multiload/Makefile.am
        multiload/autoscaler.c
        multiload/autoscaler.h
@@ -94,6 +123,7 @@ Files: accessx-status/Makefile.am
        multiload/*.in
        multiload/*.xml
        null_applet/Makefile.am
+       null_applet/README
        null_applet/*.in
        po/LINGUAS
        po/POTFILES.*
@@ -103,6 +133,8 @@ Files: accessx-status/Makefile.am
        stickynotes/pixmaps/*.png
        stickynotes/pixmaps/*.svg
        stickynotes/Makefile.am
+       stickynotes/README
+       stickynotes/TODO
        stickynotes/*.convert
        stickynotes/*.in
        stickynotes/*.ui
@@ -112,10 +144,17 @@ Files: accessx-status/Makefile.am
        trashapplet/src/Makefile.am
        trashapplet/src/xstuff.h
        trashapplet/Makefile.am
+       trashapplet/README
        trashapplet/*.in
        trashapplet/*.ui
        trashapplet/*.xml
+       AUTHORS
+       COPYING
+       ChangeLog
        Makefile.am
+       NEWS
+       NEWS.GNOME
+       README
        autogen.sh
        configure.ac
 Copyright: *No copyright*
@@ -316,6 +355,7 @@ Comment:
  Using license from COPYING file.
 
 Files: po/*.po
+       po/gnome-copyrights.txt
 Copyright: 2007, THE mate-applets COPYRIGHT HOLDER
            1998-2006, Free Software Foundation, Inc.
            2005, Norayr Chilingaryan
@@ -323,6 +363,11 @@ Copyright: 2007, THE mate-applets COPYRIGHT HOLDER
 License: GPL-2+
 Comment:
  Using license from COPYING file.
+
+Files: command/command.c
+       timerapplet/timerapplet.c
+Copyright: 2013-2014, Stefano Karapetsas
+License: GPL-3+
 
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
@@ -345,6 +390,23 @@ License: GPL-2+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+
+License: GPL-3+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU Genaral Public License for more details.
+ .
+ You should have received a copy og the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
 
 License: LGPL-2+
  This library is free software; you can redistribute it and/or
