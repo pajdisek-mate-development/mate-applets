@@ -1,3 +1,28 @@
+mate-applets (1.8.1+dfsg1-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * New upstream release.
+  * debian/rules:
+    + Remove stickynotes-applet.convert from build before running dh_install.
+  * debian/patches:
+    + Provide README file that explains about our patch numbering scheme.
+  * debian/copyright:
+    + Update file to latest upstream release.
+    + Really mention all source files.
+    + Drop copyright information for non-existent-anymore files.
+  * debian/mate-applets.manpages:
+    + Add more man pages from src:package.
+    
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Bump Standards: to 3.9.6. No changes needed.
+
+  [ Stefano Karapetsas ]
+  * debian/control:
+    + Add B-D: libgtksourceview2.0-dev. (Closes: #763585).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 06 Oct 2014 21:44:27 +0200
+
 mate-applets (1.8.0+dfsg1-1) unstable; urgency=low
 
   * Initial release. (Closes: #734888).
