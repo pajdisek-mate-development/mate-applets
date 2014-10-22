@@ -1,3 +1,12 @@
+mate-applets (1.8.1+dfsg1-3) unstable; urgency=medium
+
+  * debian/rules:
+    + Different approach: Use NEWS file as upstream ChangeLog file.
+      Now really create a meaningful changelog.gz file in the
+      /usr/share/doc/<pkg>/ folder.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 22 Oct 2014 22:12:04 +0200
+
 mate-applets (1.8.1+dfsg1-2) unstable; urgency=high
 
   * debian/mate-applets.manpages:
