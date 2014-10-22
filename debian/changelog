@@ -1,3 +1,14 @@
+mate-applets (1.8.1+dfsg1-2) unstable; urgency=high
+
+  * debian/mate-applets.manpages:
+    + Drop additional upstream man pages from bin:package again. Status of
+      those man pages is unclear and several have the same name as the man
+      pages in the gnome-applets bin:package. (Closes: #764448).
+  * debian/rules:
+    + Interpret NEWS file as upstream ChangeLog.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 09 Oct 2014 22:41:33 +0200
+
 mate-applets (1.8.1+dfsg1-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
