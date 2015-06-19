@@ -32,7 +32,7 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  	-I$(srcdir)				\
 --- a/configure.ac
 +++ b/configure.ac
-@@ -640,42 +640,31 @@
+@@ -559,41 +559,30 @@
  Makefile
  po/Makefile.in
  accessx-status/Makefile
@@ -63,7 +63,6 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  stickynotes/Makefile
  stickynotes/pixmaps/Makefile
 -stickynotes/docs/Makefile
- stickynotes/data/Makefile
  trashapplet/Makefile
  trashapplet/src/Makefile
 -trashapplet/docs/Makefile
@@ -124,16 +123,6 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  AM_CPPFLAGS =			\
  	-I$(srcdir)		\
  	-DMULTILOAD_MENU_UI_DIR=\""$(uidir)"\" \
---- a/stickynotes/Makefile.am
-+++ b/stickynotes/Makefile.am
-@@ -1,6 +1,6 @@
- ## Process this file with automake to produce Makefile.in
- 
--SUBDIRS = pixmaps docs data
-+SUBDIRS = pixmaps data
- 
- ui_files = stickynotes-applet-menu.xml
- builder_files = stickynotes.ui
 --- a/trashapplet/Makefile.am
 +++ b/trashapplet/Makefile.am
 @@ -1,4 +1,4 @@
@@ -142,3 +131,13 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
  
  appletdir       = $(datadir)/mate-panel/applets
  applet_in_files = org.mate.applets.TrashApplet.mate-panel-applet.in
+--- a/stickynotes/Makefile.am
++++ b/stickynotes/Makefile.am
+@@ -1,6 +1,6 @@
+ ## Process this file with automake to produce Makefile.in
+ 
+-SUBDIRS = pixmaps docs
++SUBDIRS = pixmaps
+ 
+ ui_files = stickynotes-applet-menu.xml
+ builder_files = stickynotes.ui
