@@ -111,7 +111,6 @@ Files: .tx/config
        null_applet/*.in
        po/LINGUAS
        po/POTFILES.*
-       stickynotes/data/*.in
        stickynotes/pixmaps/Makefile.am
        stickynotes/pixmaps/*.png
        stickynotes/pixmaps/*.svg
