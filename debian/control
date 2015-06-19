@@ -1,5 +1,5 @@
 Source: mate-applets
-Section: x11 
+Section: x11
 Priority: optional
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
 Uploaders: Mike Gabriel <sunweaver@debian.org>,
@@ -10,74 +10,71 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
 Standards-Version: 3.9.6
 Build-Depends: cdbs,
                debhelper (>= 9),
-               libgtk2.0-dev,
-               libglib2.0-dev,
-               libmate-panel-applet-dev,
-               libgtop2-dev,
-               libxklavier-dev,
-               libwnck-dev,
-               libmate-desktop-dev,
-               libnotify-dev,
-               libdbus-1-dev,
-               libdbus-glib-1-dev,
-               python-gtk2-dev,
-               python-gobject-dev,
-               mate-icon-theme,
-               libxml2-dev,
-               libmateweather-dev,
-               libpolkit-gobject-1-dev,
-               intltool,
-               python-dev,
-               libxt-dev,
-               libx11-dev,
-               mate-settings-daemon,
-               xsltproc,
-               docbook-xsl,
                docbook-to-man,
                docbook-utils,
-               network-manager-dev,
-               libgstreamer0.10-dev,
-               libgstreamer-plugins-base0.10-dev,
-               x11proto-kb-dev,
-               system-tools-backends-dev,
-               libcpufreq-dev,
-               sharutils,
-               liboobs-1-dev,
-               libupower-glib-dev,
+               docbook-xsl,
+               intltool,
                libavahi-client-dev,
                libavahi-common-dev,
                libavahi-glib-dev,
-               mate-common (>= 1.10),
-               libsoup2.4-dev,
-               yelp-tools,
+               libcpufreq-dev,
+               libdbus-1-dev,
+               libdbus-glib-1-dev,
                libdconf-dev,
+               libglib2.0-dev,
+               libgstreamer-plugins-base0.10-dev,
+               libgstreamer0.10-dev,
+               libgtk2.0-dev,
                libgtksourceview2.0-dev,
+               libgtop2-dev,
+               libmate-desktop-dev,
+               libmate-panel-applet-dev,
+               libmateweather-dev,
+               libnotify-dev,
+               liboobs-1-dev,
+               libpolkit-gobject-1-dev,
+               libsoup2.4-dev,
+               libupower-glib-dev,
+               libwnck-dev,
+               libx11-dev,
+               libxklavier-dev,
+               libxml2-dev,
+               libxt-dev,
+               mate-common (>= 1.10),
+               mate-icon-theme,
+               mate-settings-daemon,
+               network-manager-dev,
+               python-dev,
+               python-gobject-dev,
+               python-gtk2-dev,
+               sharutils,
+               system-tools-backends-dev,
+               x11proto-kb-dev,
+               xsltproc,
+               yelp-tools
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-applets.git;a=summary
 Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-applets.git
 
 Package: mate-applets
 Architecture: any
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         mate-applets-common (= ${source:Version}),
-         mate-panel,
-         mate-icon-theme,
+Depends: gir1.2-mate-panel,
+         gsettings-desktop-schemas,
          gstreamer0.10-alsa,
          gstreamer0.10-plugins-good,
-         python,
          gvfs,
-         python-gobject,
-         python-notify,
+         mate-applets-common (= ${source:Version}),
+         mate-icon-theme,
+         mate-panel,
+         python,
          python-dbus,
-         python-gst0.10,
-         gsettings-desktop-schemas,
          python-gi,
-         gir1.2-mate-panel
-Recommends: mate-system-monitor,
-            mate-media,
-            cpufrequtils,
-            mate-polkit
+         python-gobject,
+         python-gst0.10,
+         python-notify,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Recommends: cpufrequtils, mate-media, mate-polkit, mate-system-monitor
 Description: Various applets for the MATE panel
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
@@ -154,8 +151,7 @@ Package: mate-applets-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: ${misc:Depends},
-         mate-applets (= ${binary:Version})
+Depends: mate-applets (= ${binary:Version}), ${misc:Depends}
 Description: Various applets for the MATE panel (debugging symbols)
  This package contains debugging symbols for mate-applets.
  .
