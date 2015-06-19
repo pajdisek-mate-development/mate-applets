@@ -1,3 +1,39 @@
+mate-applets (1.10.0+dfsg1-1~exp1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Add Martin Wimpress to Uploaders: field.
+    + Versioned B-D: mate-common (>= 1.10).
+    + Versioned B-D: libmate-desktop-dev (>= 1.9.0).
+    + Process with wrap-and-sort.
+  * debian/rules:
+    + Create orig tarball in ../ rather than in $(CURDIR).
+    + Only install NEWS as upstream changelog.gz (and not also as NEWS.gz).
+  * debian/patches:
+    + Rebase 2001_omit-gfdl-licensed-help-files.patch against latest upstream.
+    + Add 1001_add-man-to-SUBDIRS.patch. Don't forget to install man pages on
+      make install.
+  * man pages:
+    + Drop Debian-provided man pages. They are now shipped upstream.
+  * debian/copyright:
+    + Update to latest upstream release.
+    + Provide info for shipped man pages.
+    + Upstream dropped several man pages (that already had no corresponding
+      applets in 1.8.x). The remaining man pages have been renamed (see above).
+  * debian/mate-applets*.install:
+    + Upstream now installs UI .xml files to /usr/share/mate/ui/. Adding these
+      to bin:package mate-applets-common.
+    + No such folder -usr/share/mate-2.0/ in build of mate-applets anymore.
+    + Add /usr/share/man/.
+    + Move over to bin:package mate-applets-common.
+    + Move /usr/share/mate-applets/,
+           /usr/share/man/,
+           /usr/share/mate-panel/,
+           /usr/share/polkit-1/
+      over to bin:package mate-applets-common.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 19 Jun 2015 13:56:58 +0200
+
 mate-applets (1.8.1+dfsg1-3) unstable; urgency=medium
 
   * debian/rules:
