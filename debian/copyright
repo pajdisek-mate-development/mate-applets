@@ -328,6 +328,15 @@ Files: command/command.c
 Copyright: 2013-2014, Stefano Karapetsas
 License: GPL-3+
 
+Files: man/*.1
+Copyright: 2002, Christian Marillat <marillat@debian.org>
+           2014, Adam Erdman <hekel@archlinux.info>
+           2014-2015, Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+           GNOME developers
+License: GPL-2+
+Comment:
+ Using license as found in COPYING file.
+
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
            2014, Mike Gabriel <sunweaver@debian.org>
