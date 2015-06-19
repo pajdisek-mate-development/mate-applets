@@ -1,0 +1,13 @@
+Description: Don't forget to install man pages
+Author Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -46,6 +46,7 @@
+ 	$(always_built_SUBDIRS) \
+ 	$(gtop_SUBDIRS) \
+ 	$(libmateweather_SUBDIRS) \
++	man \
+ 	$(battstat_SUBDIR) \
+ 	$(accessx_status_SUBDIR) \
+ 	$(invest_applet_SUBDIR) \
