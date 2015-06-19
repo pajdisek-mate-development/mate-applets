@@ -78,21 +78,6 @@ Files: .tx/config
        invest-applet/data/art/*.svg
        invest-applet/Makefile.am
        m4/*.m4
-       man/cdplayer_applet.1
-       man/charpick_applet.1
-       man/cpufreq-selector.1
-       man/drivemount_applet.1
-       man/geyes_applet.1
-       man/gkb_applet.1
-       man/gkb_xmmap.1
-       man/invest-chart.1
-       man/mateweather.1
-       man/mini_commander_applet.1
-       man/mixer_applet.1
-       man/multiload_applet.1
-       man/screenshooter_applet.1
-       man/sound-monitor_applet.1
-       man/whereami_applet.1
        man/Makefile.am
        mateweather/AUTHORS
        mateweather/Makefile.am
