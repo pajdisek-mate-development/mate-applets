@@ -1,3 +1,10 @@
+mate-applets (1.10.3+dfsg1-1~exp2) experimental; urgency=medium
+
+  * debian/mate-applets-common.install:
+    + Don't ship /etc files in mate-applets-common. (Closes: #789348).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 17 Jul 2015 14:35:06 +0200
+
 mate-applets (1.10.3+dfsg1-1~exp1) experimental; urgency=medium
 
   * New upstream release.
