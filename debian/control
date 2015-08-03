@@ -10,20 +10,11 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
 Standards-Version: 3.9.6
 Build-Depends: cdbs,
                debhelper (>= 9),
-               docbook-to-man,
-               docbook-utils,
-               docbook-xsl,
                intltool,
-               libavahi-client-dev,
-               libavahi-common-dev,
-               libavahi-glib-dev,
                libcpufreq-dev,
                libdbus-1-dev,
                libdbus-glib-1-dev,
-               libdconf-dev,
                libglib2.0-dev,
-               libgstreamer-plugins-base0.10-dev,
-               libgstreamer0.10-dev,
                libgtk2.0-dev,
                libgtksourceview2.0-dev,
                libgtop2-dev,
@@ -31,27 +22,16 @@ Build-Depends: cdbs,
                libmate-panel-applet-dev,
                libmateweather-dev,
                libnotify-dev,
-               liboobs-1-dev,
                libpolkit-gobject-1-dev,
-               libsoup2.4-dev,
                libupower-glib-dev,
                libwnck-dev,
                libx11-dev,
-               libxklavier-dev,
                libxml2-dev,
-               libxt-dev,
                mate-common (>= 1.10),
                mate-icon-theme,
-               mate-settings-daemon,
-               network-manager-dev,
-               python-dev,
-               python-gobject-dev,
-               python-gtk2-dev,
-               sharutils,
-               system-tools-backends-dev,
+               python-gi-dev,
                x11proto-kb-dev,
-               xsltproc,
-               yelp-tools
+               yelp-tools,
 Homepage: http://www.mate-desktop.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-applets.git;a=summary
 Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-applets.git
@@ -60,21 +40,17 @@ Package: mate-applets
 Architecture: any
 Depends: gir1.2-mate-panel,
          gsettings-desktop-schemas,
-         gstreamer0.10-alsa,
-         gstreamer0.10-plugins-good,
          gvfs,
          mate-applets-common (= ${source:Version}),
          mate-icon-theme,
          mate-panel,
-         python,
-         python-dbus,
          python-gi,
-         python-gobject,
-         python-gst0.10,
-         python-notify,
          ${misc:Depends},
-         ${shlibs:Depends}
-Recommends: cpufrequtils, mate-media, mate-polkit, mate-system-monitor
+         ${shlibs:Depends},
+Recommends: cpufrequtils,
+            mate-media,
+            mate-polkit,
+            mate-system-monitor,
 Description: Various applets for the MATE panel
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
@@ -94,8 +70,6 @@ Description: Various applets for the MATE panel
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
  .
- Modem Monitor: monitors the modem.
- .
  Invest: downloads current stock quotes from the Internet and displays
  the quotes in a scrolling display in the applet. The applet downloads the
  stock information from Yahoo! Finance.
@@ -110,8 +84,9 @@ Description: Various applets for the MATE panel
 
 Package: mate-applets-common
 Architecture: all
-Depends: ${misc:Depends}
-Replaces: mate-applets (<< 1.1.1-1)
+Depends: ${misc:Depends},
+Replaces: mate-applets (<< 1.9.0),
+Breaks: mate-applets (<< 1.9.0),
 Description: Various applets for the MATE panel (common files)
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
@@ -131,8 +106,6 @@ Description: Various applets for the MATE panel (common files)
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
  .
- Modem Monitor: monitors the modem.
- .
  Invest: downloads current stock quotes from the Internet and displays
  the quotes in a scrolling display in the applet. The applet downloads the
  stock information from Yahoo! Finance.
@@ -151,9 +124,41 @@ Package: mate-applets-dbg
 Section: debug
 Priority: extra
 Architecture: any
-Depends: mate-applets (= ${binary:Version}), ${misc:Depends}
+Depends: mate-applets (= ${binary:Version}),
+         ${misc:Depends},
 Description: Various applets for the MATE panel (debugging symbols)
- This package contains debugging symbols for mate-applets.
+ accessx-status: indicates keyboard accessibility settings, including
+ the current state of the keyboard, if those features are in use.
+ .
+ Battstat: monitors the power subsystem on a laptop.
+ .
+ Character palette: provides a convenient way to access non-standard
+ characters, such as accented characters, mathematical symbols, special
+ symbols, and punctuation marks.
+ .
+ MATE CPUFreq Applet: CPU frequency scaling monitor
+ .
+ Drivemount: lets you mount and unmount drives and file systems.
+ .
+ Geyes: pair of eyes which follow the mouse pointer around the screen.
+ .
+ Keyboard layout switcher: lets you assign different keyboard
+ layouts for different locales.
+ .
+ Invest: downloads current stock quotes from the Internet and displays
+ the quotes in a scrolling display in the applet. The applet downloads the
+ stock information from Yahoo! Finance.
+ .
+ System monitor: CPU, memory, network, swap file and resource.
+ .
+ Trash: lets you drag items to the trash folder.
+ .
+ Weather report: downloads weather information from the U.S National Weather
+ Service (NWS) servers, including the Interactive Weather Information
+ Network (IWIN).
+ .
+ This package contains debugging symbols for mate-applets package.
+ It is provided to help debugging problems.
  .
  The debugging symbols are installed in /usr/lib/debug and will
  automatically be used by gdb.
