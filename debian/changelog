@@ -1,4 +1,4 @@
-mate-applets (1.10.3+gfdl1-1) UNRELEASED; urgency=medium
+mate-applets (1.10.3+gfdl1-1) unstable; urgency=medium
 
   * debian/patches:
     + Drop 2001_omit-gfdl-licensed-help-files.patch, mate-applets help
@@ -13,6 +13,8 @@ mate-applets (1.10.3+gfdl1-1) UNRELEASED; urgency=medium
     + Remove references to timer-applet.
   * debian/watch:
     + Remove dfsg suffix.
+  * debian/copyright:
+    + Add copyright attributions for documentation authors and translators.
 
   [ Mike Gabriel ]
   * Re-upload to unstable.
@@ -20,8 +22,18 @@ mate-applets (1.10.3+gfdl1-1) UNRELEASED; urgency=medium
       upstream version greater than the previous +dfsg1 upload.
       FIXME: drop the upstream version suffix completely with next upstream
       release).
+    - Drop all dependencies on GStreamer. The mate-applets package now only
+      provide pulseaudio support and dropped GStreamer support from the 1.10.x
+      series (and later) completely. (Closes: #785880). The corresponding
+      change in debian/control got already introduced in Debian package version
+      1.10.0+dfsg1-1~exp1.
+  * debian/copyright:
+    + Fine-granulate copyright attribution for help files. Refraining from
+      too much wildcard usage.
+  * debian/control:
+    + Add D (mate-applets): python (for mate-invest-chart).
 
- -- Martin Wimpress <code@flexion.org>  Mon, 03 Aug 2015 22:00:00 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Aug 2015 15:04:50 +0200
 
 mate-applets (1.10.3+dfsg1-1~exp2) experimental; urgency=medium
 
