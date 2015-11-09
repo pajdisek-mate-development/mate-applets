@@ -1,4 +1,3 @@
 version=3
-opts=uversionmangle=s/^(.*)$/${1}\+gfdl1/ \
 http://git.mate-desktop.org/mate-applets/ \
     snapshot/mate-applets-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
