@@ -1,8 +1,14 @@
-mate-applets (1.12.1-1) UNRELEASED; urgency=medium
+mate-applets (1.12.1-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
+  * debian/control:
+    + Drop obsolete B-D and Depends: mate-icon-theme.
+    + Versioned B-D: mate-common (>= 1.12) and libmate-desktop-dev (>= 1.12).
+  * debian/watch:
+    + Drop +gfdl suffix.
 
- -- Martin Wimpress <code@flexion.org>  Mon, 09 Nov 2015 23:12:39 +0000
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Jan 2016 08:36:00 +0100
 
 mate-applets (1.10.3+gfdl1-2) unstable; urgency=medium
 
