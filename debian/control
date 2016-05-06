@@ -52,6 +52,8 @@ Recommends: cpufrequtils,
             mate-media,
             mate-polkit,
             mate-system-monitor,
+Replaces: mate-netspeed (<< 1.13.0),
+Breaks: mate-netspeed (<< 1.13.0),
 Description: Various applets for the MATE panel
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
@@ -75,6 +77,8 @@ Description: Various applets for the MATE panel
  the quotes in a scrolling display in the applet. The applet downloads the
  stock information from Yahoo! Finance.
  .
+ Netspeed: network traffic monitor applet.
+ .
  System monitor: CPU, memory, network, swap file and resource.
  .
  Trash: lets you drag items to the trash folder.
@@ -87,7 +91,9 @@ Package: mate-applets-common
 Architecture: all
 Depends: ${misc:Depends},
 Replaces: mate-applets (<< 1.9.0),
+          mate-netspeed-common (<< 1.13.0),
 Breaks: mate-applets (<< 1.9.0),
+        mate-netspeed-common (<< 1.13.0),
 Description: Various applets for the MATE panel (common files)
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
@@ -111,6 +117,8 @@ Description: Various applets for the MATE panel (common files)
  the quotes in a scrolling display in the applet. The applet downloads the
  stock information from Yahoo! Finance.
  .
+ Netspeed: network traffic monitor applet.
+ .
  System monitor: CPU, memory, network, swap file and resource.
  .
  Trash: lets you drag items to the trash folder.
@@ -127,6 +135,8 @@ Priority: extra
 Architecture: any
 Depends: mate-applets (= ${binary:Version}),
          ${misc:Depends},
+Replaces: mate-netspeed-dbg (<< 1.13.0),
+Breaks: mate-netspeed-dbg (<< 1.13.0),
 Description: Various applets for the MATE panel (debugging symbols)
  accessx-status: indicates keyboard accessibility settings, including
  the current state of the keyboard, if those features are in use.
@@ -149,6 +159,8 @@ Description: Various applets for the MATE panel (debugging symbols)
  Invest: downloads current stock quotes from the Internet and displays
  the quotes in a scrolling display in the applet. The applet downloads the
  stock information from Yahoo! Finance.
+ .
+ Netspeed: network traffic monitor applet.
  .
  System monitor: CPU, memory, network, swap file and resource.
  .
