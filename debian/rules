@@ -23,7 +23,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
                 --localstatedir=/var \
                 --disable-static \
                 --with-cpufreq-lib=cpufreq \
-                --with-gtk=2.0
+                --with-gtk=3.0
 
 common-install-indep:: remove-cruft
 common-install-arch:: remove-cruft
