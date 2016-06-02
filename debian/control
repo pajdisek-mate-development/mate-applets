@@ -91,6 +91,7 @@ Package: mate-applets-common
 Architecture: all
 Depends: ${misc:Depends},
 Replaces: mate-applets (<< 1.9.0),
+          mate-netspeed (<< 1.13.0),
           mate-netspeed-common (<< 1.13.0),
 Breaks: mate-applets (<< 1.9.0),
         mate-netspeed (<< 1.13.0),
