@@ -1,3 +1,11 @@
+mate-applets (1.14.0-3) unstable; urgency=medium
+
+  * debian/control:
+    + Add to R (mate-applets-common): mate-netspeed (<< 1.13.0). Thanks to
+      Andreas Beckmann for having me understand Breaks:/Replaces: better.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 02 Jun 2016 22:46:55 +0200
+
 mate-applets (1.14.0-2) unstable; urgency=medium
 
   * debian/control:
