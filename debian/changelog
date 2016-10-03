@@ -1,10 +1,21 @@
-mate-applets (1.16.0-1) UNRELEASED; urgency=medium
+mate-applets (1.16.0-1) unstable; urgency=medium
 
-  * New upstream release. (Closes: #837005)
+  [ Martin Wimpress ]
+  * New upstream release.
+  * debian/patches:
+    + Add 1000-fix-build-on-linux-4.7-or-newer.patch. (Closes: #837005).
+  * debian/copyright:
+    + Update copyright attributions.
+
+  [ Vangelis Mouhtsis ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.2-0ubuntu1 upload.
   * debian/control:
     + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
 
- -- Martin Wimpress <code@flexion.org>  Fri, 23 Sep 2016 10:46:48 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 03 Oct 2016 21:00:41 +0200
 
 mate-applets (1.15.2-0ubuntu1) yakkety; urgency=medium
 
