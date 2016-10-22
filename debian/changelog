@@ -9,6 +9,8 @@ mate-applets (1.16.0-1) unstable; urgency=medium
 
   [ Vangelis Mouhtsis ]
   * debian/changelog:
+    + Drop mate-common from B-D: It uses deprecated gnome-common macros/variables. (Closes: #830026).
+  * debian/changelog:
     + Fix missing changelog items for 1.15.2-0ubuntu1 upload.
   * debian/control:
     + Dependencies updated for MATE 1.16.
