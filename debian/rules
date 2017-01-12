@@ -24,8 +24,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
                 --libexecdir=/usr/lib/mate-applets \
                 --localstatedir=/var \
                 --disable-static \
-                --with-cpufreq-lib=cpufreq \
-                --with-gtk=3.0
+                --with-cpufreq-lib=cpufreq
 
 common-install-indep:: remove-cruft
 common-install-arch:: remove-cruft
