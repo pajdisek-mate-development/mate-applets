@@ -15,7 +15,9 @@ DEB_DH_STRIP_ARGS_ALL = --dbgsym-migration='mate-applets-dbg (<< 1.14.0-2~)'
 DEB_DH_INSTALLCHANGELOGS_ARGS = NEWS
 DEB_INSTALL_DOCS_ALL = README AUTHORS
 
-DEB_DH_INSTALL_ARGS += --fail-missing
+DEB_DH_MISSING_ARGS += --fail-missing
+
+DEB_DH_INSTALL_ARGS +=
 
 DEB_CONFIGURE_SCRIPT := ./autogen.sh
 
