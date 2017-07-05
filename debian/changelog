@@ -8,7 +8,15 @@ mate-applets (1.18.1-1) UNRELEASED; urgency=medium
   [ Aron Xu ]
   * New upstream release.
 
- -- Aron Xu <aron@debian.org>  Wed, 05 Jul 2017 19:38:30 +0800
+  [ Vangelis Mouhtsis ]
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10).
+  * debian/rules:
+    + Add new block for DEB_DH_MISSING_ARGS.
+
+ -- Vangelis Mouhtsis <vangelis@gnugr.org>  Wed, 05 Jul 2017 18:17:29 +0300
 
 mate-applets (1.16.0-1) unstable; urgency=medium
 
