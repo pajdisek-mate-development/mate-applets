@@ -1,3 +1,15 @@
+mate-applets (1.18.1-1) UNRELEASED; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control: Dependencies updated for MATE 1.17.
+  * debian/rules: Remove obsolete --with-gtk=3.0
+  * debian/control: Dependencies updated for MATE 1.18.
+
+  [ Aron Xu ]
+  * New upstream release.
+
+ -- Aron Xu <aron@debian.org>  Wed, 05 Jul 2017 19:38:30 +0800
+
 mate-applets (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
