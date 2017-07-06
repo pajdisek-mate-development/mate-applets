@@ -12,7 +12,7 @@ mate-applets (1.18.1-1) UNRELEASED; urgency=medium
   * debian/compat:
     + Update compat version.
   * debian/control:
-    + Bump debhelper version to (>= 10).
+    + Bump debhelper version to (>= 10.3~).
   * debian/rules:
     + Add new block for DEB_DH_MISSING_ARGS.
 
