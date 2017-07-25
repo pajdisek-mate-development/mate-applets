@@ -1,12 +1,12 @@
-mate-applets (1.18.1-1) UNRELEASED; urgency=medium
+mate-applets (1.18.1-1) unstable; urgency=medium
+
+  [ Aron Xu ]
+  * New upstream release.
 
   [ Martin Wimpress ]
   * debian/control: Dependencies updated for MATE 1.17.
   * debian/rules: Remove obsolete --with-gtk=3.0
   * debian/control: Dependencies updated for MATE 1.18.
-
-  [ Aron Xu ]
-  * New upstream release.
 
   [ Vangelis Mouhtsis ]
   * debian/compat:
@@ -18,7 +18,15 @@ mate-applets (1.18.1-1) UNRELEASED; urgency=medium
   * debian/control:
     + Bump Standards-Version: to 4.0.0. No changes needed.
 
- -- Vangelis Mouhtsis <vangelis@gnugr.org>  Wed, 05 Jul 2017 18:17:29 +0300
+  [ Mike Gabriel ]
+  * debian/rules:
+    + Switch from DEB_DH_INSTALL_ARGS += --fail-missing to list-missing target
+      from CDBS's utils.mk.
+  * debian/control:
+    + Add D (mate-applets): python. Needed by invest-applet.
+      This makes lintian happy.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 25 Jul 2017 13:07:26 +0200
 
 mate-applets (1.16.0-1) unstable; urgency=medium
 
