@@ -1,3 +1,15 @@
+mate-applets (1.18.1-2) unstable; urgency=medium
+
+  * debian/control:
+    + Don't B-D on libiw-dev when building on kfreebsd-i386, kfreebsd-amd64
+      and hurd-i386.
+  * debian/mate-applets-common.install:
+    + Simplify .install file, works around an FTBFS on kfreebsd (where the
+      polkit-1/ folders does not get created/populated due to lack of CPU
+      governor support).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 23 Aug 2017 18:34:33 +0200
+
 mate-applets (1.18.1-1) unstable; urgency=medium
 
   [ Aron Xu ]
