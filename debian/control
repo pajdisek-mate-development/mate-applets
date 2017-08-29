@@ -10,6 +10,7 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
 Standards-Version: 4.0.0
 Build-Depends: cdbs,
                debhelper (>= 10.3~),
+               dh-exec,
                dpkg-dev (>= 1.16.1.1),
                intltool,
                libcpufreq-dev,
