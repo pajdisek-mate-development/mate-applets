@@ -1,3 +1,4 @@
-etc/
+#! /usr/bin/dh-exec
+[!hurd-any] etc/
 usr/bin/
 usr/lib/
