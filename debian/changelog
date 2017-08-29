@@ -1,3 +1,13 @@
+mate-applets (1.18.1-3) unstable; urgency=medium
+
+  * debian/control:
+    + Add B-D: dh-exec (for arch-specific file installation).
+  * debian/mate-applets.install:
+    + On hurd-any systems, we don't generate an /etc/ directory, due to
+      non-built battstat and cpufreq applets.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Aug 2017 13:52:54 +0200
+
 mate-applets (1.18.1-2) unstable; urgency=medium
 
   * debian/control:
