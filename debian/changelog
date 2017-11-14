@@ -1,8 +1,13 @@
-mate-applets (1.18.2-1) UNRELEASED; urgency=medium
+mate-applets (1.18.2-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Mon, 13 Nov 2017 21:58:53 +0000
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Nov 2017 09:24:55 +0100
 
 mate-applets (1.18.1-3) unstable; urgency=medium
 
