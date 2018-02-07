@@ -1,10 +1,10 @@
-mate-applets (1.20.0-0ubuntu1) UNRELEASED; urgency=medium
+mate-applets (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 07 Feb 2018 14:03:57 +0000
 
-mate-applets (1.19.4-0ubuntu1) UNRELEASED; urgency=medium
+mate-applets (1.19.4-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
 
