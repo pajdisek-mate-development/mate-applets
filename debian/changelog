@@ -1,3 +1,13 @@
+mate-applets (1.20.0-2) unstable; urgency=medium
+
+  * debian/copyright:
+    + Use secure URI for copyright format.
+  * debian/mate-applets.install:
+    + Fix FTBFS (post-build) on Hurd. Now that the invest-applet has been
+      dropped, there is no usr/bin/ on Hurd anymore.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 01 Mar 2018 20:17:02 +0100
+
 mate-applets (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
