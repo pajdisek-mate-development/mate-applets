@@ -1,3 +1,12 @@
+mate-applets (1.20.0-3) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0001_add_style_class_multiload_applet.patch. Add style class
+      multiload-applet.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 07 Mar 2018 14:55:59 +0100
+
 mate-applets (1.20.0-2) unstable; urgency=medium
 
   * debian/copyright:
