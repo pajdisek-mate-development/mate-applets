@@ -1,0 +1,23 @@
+Author: raveit65 <mate@raveit.de>
+Description: Add style class multiload-applet.
+
+diff --git a/multiload/main.c b/multiload/main.c
+index 38e8bc7..d7029dc 100644
+--- a/multiload/main.c
++++ b/multiload/main.c
+@@ -492,11 +492,15 @@ static const GtkActionEntry multiload_menu_actions [] = {
+ static gboolean
+ multiload_applet_new(MatePanelApplet *applet, const gchar *iid, gpointer data)
+ {
++	GtkStyleContext *context;
+ 	MultiloadApplet *ma;
+ 	GSettings *lockdown_settings;
+ 	GtkActionGroup *action_group;
+ 	gchar *ui_path;
+ 
++	context = gtk_widget_get_style_context (GTK_WIDGET (applet));
++	gtk_style_context_add_class (context, "multiload-applet");
++
+ 	ma = g_new0(MultiloadApplet, 1);
+ 
+ 	ma->applet = applet;
