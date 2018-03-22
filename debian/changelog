@@ -1,3 +1,16 @@
+mate-applets (1.20.0-4) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0002_fix_cpufreq_applet_spacing.patch. Fix cpufreq applet spacing on
+      HiDPI displays.
+
+  [ Mike Gabriel ]
+  * debian/patches:
+    + Add patch header to 0002_fix_cpufreq_applet_spacing.patch.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 22 Mar 2018 21:55:56 +0100
+
 mate-applets (1.20.0-3) unstable; urgency=medium
 
   [ Martin Wimpress ]
