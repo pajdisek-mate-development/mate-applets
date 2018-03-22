@@ -1,3 +1,12 @@
+From ea40c35e823914cd5721ad7af436cb9e69736d2d Mon Sep 17 00:00:00 2001
+From: Victor Kareh <vkareh@vkareh.net>
+Date: Tue, 20 Mar 2018 07:18:44 -0400
+Subject: [PATCH] Fix cpufreq applet spacing on HiDPI displays
+
+---
+ cpufreq/src/cpufreq-applet.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
 diff --git a/cpufreq/src/cpufreq-applet.c b/cpufreq/src/cpufreq-applet.c
 index 4f60202..c667eda 100644
 --- a/cpufreq/src/cpufreq-applet.c
