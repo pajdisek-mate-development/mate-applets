@@ -1,8 +1,16 @@
-mate-applets (1.20.1-1) UNRELEASED; urgency=medium
+mate-applets (1.20.1-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
+  * debian/patches:
+    + Drop 0001_add_style_class_multiload_applet.patch. Applied upstream.
+    + Drop 0002_fix_cpufreq_applet_spacing.patch. Applied upstream.
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Mon, 26 Mar 2018 18:46:57 +0100
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 05 Apr 2018 12:07:32 +0200
 
 mate-applets (1.20.0-4) unstable; urgency=medium
 
