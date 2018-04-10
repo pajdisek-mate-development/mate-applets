@@ -1,1 +1,2 @@
 1000-fix-build-on-linux-4.7-or-newer.patch
+0001_preserve_size_of_multiload_applet.patch
