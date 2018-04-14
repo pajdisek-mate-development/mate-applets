@@ -1,5 +1,5 @@
 Author: marosg42 <marosg@gmail.com>
-Description: Preserve the size of ther multiload applet and correct type mismatch in g_settings_set_value
+Description: Preserve the size of the multiload applet and correct type mismatch in g_settings_set_value
 
 diff --git a/multiload/properties.c b/multiload/properties.c
 index a0feb3b..f78c344 100644
