@@ -1,3 +1,19 @@
+mate-applets (1.20.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add debian/patches/0001_preserve_size_of_multiload_applet.patch. Preserve
+      the size of the multiload applet and correct type mismatch in
+      g_settings_set_value.
+
+  [ Mike Gabriel ]
+  * debian/mate-applets.install:
+    + We don't build usr/bin/mate-cpufreq-selector on kfreebsd-any architectures.
+      So omitting it from installation into the bin:pkg. This should fix
+      recently observed FTBFS on Debian GNU/kFreeBSD.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 13:59:25 +0200
+
 mate-applets (1.20.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
