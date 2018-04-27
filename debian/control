@@ -8,7 +8,7 @@ Uploaders: Mike Gabriel <sunweaver@debian.org>,
            Vangelis Mouhtsis <vangelis@gnugr.org>,
            Martin Wimpress <code@flexion.org>,
            MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>,
-Standards-Version: 4.1.3
+Standards-Version: 4.1.4
 Build-Depends: cdbs,
                debhelper (>= 10.3~),
                dh-exec,
