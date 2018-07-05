@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: MATE Applets
 Upstream-Contact: Martin Wimpress <martin@mate-desktop.org>
-Source: http://git.mate-desktop.org/mate-applets/
+Source: https://git.mate-desktop.org/mate-applets/
 
 Files: .tx/config
        .github/issue_template.md
