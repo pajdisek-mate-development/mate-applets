@@ -40,7 +40,7 @@ Vcs-Git: https://salsa.debian.org/debian-mate-team/mate-applets.git
 
 Package: mate-applets
 Architecture: any
-Depends: gir1.2-matepanelapplet-4.0,
+Depends: gir1.2-mate-panel,
          gsettings-desktop-schemas,
          gvfs,
          mate-applets-common (= ${source:Version}),
