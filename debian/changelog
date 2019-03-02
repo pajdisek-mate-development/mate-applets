@@ -1,3 +1,10 @@
+mate-applets (1.20.3-2) unstable; urgency=medium
+
+  * debian/control:
+    + Drop from D (mate-applets): gir1.2-mate-panel. (Closes: #922143).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 02 Mar 2019 09:28:08 +0100
+
 mate-applets (1.20.3-1) unstable; urgency=medium
 
   * New upstream release.
