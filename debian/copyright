@@ -164,6 +164,7 @@ Files: .tx/config
        README
        autogen.sh
        configure.ac
+       git.mk
 Copyright: *No copyright*
 License: GPL-2+
 Comment:
@@ -1297,6 +1298,7 @@ Files: stickynotes/docs/am/*
  cpufreq/help/rw/rw.po
  cpufreq/help/kk/kk.po
  cpufreq/help/zh_CN/zh_CN.po
+ cpufreq/help/fil/fil.po
  cpufreq/help/fy/fy.po
  cpufreq/help/bn_IN/bn_IN.po
  cpufreq/help/gl/gl.po
@@ -1883,6 +1885,7 @@ Files: stickynotes/docs/am/*
  trashapplet/docs/uz/uz.po
  trashapplet/docs/ka/ka.po
  trashapplet/docs/fr/fr.po
+ trashapplet/docs/fil/fil.po
  trashapplet/docs/pt_BR/pt_BR.po
  trashapplet/docs/gu/gu.po
  trashapplet/docs/en_GB/en_GB.po
