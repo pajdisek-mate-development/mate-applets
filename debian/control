@@ -31,7 +31,6 @@ Build-Depends: cdbs,
                libx11-dev,
                libxml2-dev,
                mate-common (>= 1.18),
-               python-gi-dev,
                x11proto-kb-dev,
                yelp-tools,
 Homepage: http://www.mate-desktop.org/
@@ -44,8 +43,6 @@ Depends: gsettings-desktop-schemas,
          gvfs,
          mate-applets-common (= ${source:Version}),
          mate-panel,
-         python,
-         python-gi,
          ${misc:Depends},
          ${shlibs:Depends},
 Recommends: mate-media,
@@ -71,10 +68,6 @@ Description: Various applets for the MATE panel
  .
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
- .
- Invest: downloads current stock quotes from the Internet and displays
- the quotes in a scrolling display in the applet. The applet downloads the
- stock information from Yahoo! Finance.
  .
  Netspeed: network traffic monitor applet.
  .
@@ -113,10 +106,6 @@ Description: Various applets for the MATE panel (common files)
  .
  Keyboard layout switcher: lets you assign different keyboard
  layouts for different locales.
- .
- Invest: downloads current stock quotes from the Internet and displays
- the quotes in a scrolling display in the applet. The applet downloads the
- stock information from Yahoo! Finance.
  .
  Netspeed: network traffic monitor applet.
  .
