@@ -1,8 +1,21 @@
-mate-applets (1.22.1-1) UNRELEASED; urgency=medium
+mate-applets (1.22.1-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control (et al.):
+    + Drop Python and mention of the Invest applet (Closes: #927875).
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Mon, 18 Mar 2019 20:30:23 +0000
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.4.0. No changes needed.
+  * debian/rules:
+    + Drop dbgsym-migration dh_strip override.
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Jul 2019 00:56:21 +0200
 
 mate-applets (1.20.3-2) unstable; urgency=medium
 
