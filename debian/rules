@@ -10,8 +10,6 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
 
-DEB_DH_STRIP_ARGS_ALL = --dbgsym-migration='mate-applets-dbg (<< 1.14.0-2~)'
-
 # use the NEWS file as upstream ChangeLog...
 DEB_DH_INSTALLCHANGELOGS_ARGS = NEWS
 DEB_INSTALL_DOCS_ALL = README AUTHORS
