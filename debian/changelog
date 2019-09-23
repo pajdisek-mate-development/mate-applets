@@ -1,3 +1,14 @@
+mate-applets (1.22.1-4) unstable; urgency=medium
+
+  * debian/control:
+    + Restrict B-D to [linux-any] architectures. Fixes FTBFS on kfreebsd-* and
+      hurd-i386.
+  * debian/control:
+    + Allow libcpufreq-dev as alternative B-D on e.g. Ubuntu build daemons, as
+      libcpupower-dev is not available for Ubuntu at this time.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 10 Aug 2019 21:19:46 +0200
+
 mate-applets (1.22.1-3) unstable; urgency=medium
 
   * debian/patches:
