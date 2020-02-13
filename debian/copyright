@@ -6,6 +6,7 @@ Source: https://git.mate-desktop.org/mate-applets/
 Files: .travis.yml
        .tx/config
        .github/issue_template.md
+       .github/FUNDING.yml
        accessx-status/AUTHORS
        accessx-status/Makefile.am
        accessx-status/*.in
@@ -100,7 +101,7 @@ Files: .travis.yml
        netspeed/Makefile.am
        netspeed/data/Makefile.am
        netspeed/data/netspeed-menu.xml
-       netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.in.in
+       netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in
        netspeed/data/org.mate.panel.applet.NetspeedAppletFactory.service.in
        netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in
        netspeed/help/Makefile.am
@@ -136,6 +137,7 @@ Files: .travis.yml
        netspeed/icons/Makefile.am
        netspeed/src/Makefile.am
        po/LINGUAS
+       po/Makevars
        po/POTFILES.*
        stickynotes/pixmaps/Makefile.am
        stickynotes/pixmaps/*.png
@@ -157,8 +159,6 @@ Files: .travis.yml
        trashapplet/*.ui
        trashapplet/*.xml
        AUTHORS
-       COPYING
-       COPYING-DOCS
        ChangeLog
        Makefile.am
        NEWS
@@ -330,14 +330,18 @@ Comment:
 Files: mate-applets.pot
        po/*.po
        po/gnome-copyrights.txt
-Copyright: YEAR, THE PACKAGE'S COPYRIGHT HOLDER
-           2007, THE mate-applets COPYRIGHT HOLDER
+Copyright: 2007, THE mate-applets COPYRIGHT HOLDER
            1998-2006, Free Software Foundation, Inc.
            2005, Norayr Chilingaryan
            2009-2010, The Gnome Foundation
 License: GPL-2+
 Comment:
  Using license from COPYING file.
+
+Files: command/ma-command.c
+       command/ma-command.h
+Copyright: 2018, Alberts Muktupāvels
+License: GPL-2+
 
 Files: command/command.c
        timerapplet/timerapplet.c
@@ -720,6 +724,7 @@ Files: stickynotes/docs/am/*
  stickynotes/docs/tr/tr.po
  stickynotes/docs/kn/kn.po
  stickynotes/docs/la/la.po
+ stickynotes/docs/ie/ie.po
  stickynotes/docs/ig/ig.po
  stickynotes/docs/en_AU/en_AU.po
  stickynotes/docs/es_UY/es_UY.po
@@ -920,6 +925,7 @@ Files: stickynotes/docs/am/*
  drivemount/help/hr/hr.po
  drivemount/help/crh/crh.po
  drivemount/help/az/az.po
+ drivemount/help/ie/ie.po
  drivemount/help/it/it.po
  drivemount/help/ms/ms.po
  drivemount/help/oc/oc.po
@@ -968,6 +974,7 @@ Files: stickynotes/docs/am/*
  mateweather/docs/tr/tr.po
  mateweather/docs/kn/kn.po
  mateweather/docs/la/la.po
+ mateweather/docs/ie/ie.po
  mateweather/docs/ig/ig.po
  mateweather/docs/en_AU/en_AU.po
  mateweather/docs/es_UY/es_UY.po
@@ -1092,6 +1099,7 @@ Files: stickynotes/docs/am/*
  netspeed/help/si/si.po
  netspeed/help/tr/tr.po
  netspeed/help/kn/kn.po
+ netspeed/help/ie/ie.po
  netspeed/help/ig/ig.po
  netspeed/help/en_AU/en_AU.po
  netspeed/help/mr/mr.po
@@ -1195,6 +1203,7 @@ Files: stickynotes/docs/am/*
  cpufreq/help/lv/lv.po
  cpufreq/help/ku/ku.po
  cpufreq/help/ia/ia.po
+ cpufreq/help/ie/ie.po
  cpufreq/help/ps/ps.po
  cpufreq/help/ko/ko.po
  cpufreq/help/li/li.po
@@ -1326,6 +1335,7 @@ Files: stickynotes/docs/am/*
  geyes/docs/lv/lv.po
  geyes/docs/ku/ku.po
  geyes/docs/ia/ia.po
+ geyes/docs/ie/ie.po
  geyes/docs/ps/ps.po
  geyes/docs/ko/ko.po
  geyes/docs/li/li.po
@@ -1486,6 +1496,7 @@ Files: stickynotes/docs/am/*
  multiload/docs/cmn/cmn.po
  multiload/docs/uk/uk.po
  multiload/docs/id/id.po
+ multiload/docs/ie/ie.po
  multiload/docs/te/te.po
  multiload/docs/be/be.po
  multiload/docs/mn/mn.po
@@ -1574,6 +1585,7 @@ Files: stickynotes/docs/am/*
  accessx-status/docs/lv/lv.po
  accessx-status/docs/ku/ku.po
  accessx-status/docs/ia/ia.po
+ accessx-status/docs/ie/ie.po
  accessx-status/docs/ps/ps.po
  accessx-status/docs/ko/ko.po
  accessx-status/docs/pa/pa.po
@@ -1718,6 +1730,7 @@ Files: stickynotes/docs/am/*
  battstat/docs/be/be.po
  battstat/docs/mn/mn.po
  battstat/docs/sr@latin/sr@latin.po
+ battstat/docs/ie/ie.po
  battstat/docs/is/is.po
  battstat/docs/sq/sq.po
  battstat/docs/es_MX/es_MX.po
@@ -1810,6 +1823,7 @@ Files: stickynotes/docs/am/*
  trashapplet/docs/lv/lv.po
  trashapplet/docs/ku/ku.po
  trashapplet/docs/ia/ia.po
+ trashapplet/docs/ie/ie.po
  trashapplet/docs/ps/ps.po
  trashapplet/docs/ko/ko.po
  trashapplet/docs/li/li.po
@@ -1945,6 +1959,7 @@ Files: stickynotes/docs/am/*
  charpick/help/lv/lv.po
  charpick/help/ku/ku.po
  charpick/help/ia/ia.po
+ charpick/help/ie/ie.po
  charpick/help/ps/ps.po
  charpick/help/ko/ko.po
  charpick/help/pa/pa.po
