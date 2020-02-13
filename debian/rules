@@ -22,8 +22,7 @@ DEB_CONFIGURE_EXTRA_FLAGS += \
                 --disable-silent-rules \
                 --libexecdir=/usr/lib/mate-applets \
                 --localstatedir=/var \
-                --disable-static \
-                --with-cpufreq-lib=cpupower
+                --disable-static
 
 common-install-indep:: remove-cruft
 common-install-arch:: remove-cruft
