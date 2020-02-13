@@ -33,6 +33,7 @@ Build-Depends: autoconf-archive,
                libx11-dev,
                libxml2-dev,
                mate-common (>= 1.18),
+               policykit-1,
                x11proto-kb-dev,
                yelp-tools,
 Homepage: http://www.mate-desktop.org/
