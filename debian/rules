@@ -32,5 +32,12 @@ remove-cruft::
 	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyc
 	rm -rfv debian/*/usr/lib/python*/dist-packages/mate_invest/*.pyo
 
+	# applets have been moved to <PREFIX>/lib/mate-applets/ (and renamed) since 1.24.0
+	rm -fv  debian/*/usr/share/man/man1/mate-charpick-applet.1*
+	rm -fv  debian/*/usr/share/man/man1/mate-drivemount-applet.1*
+	rm -fv  debian/*/usr/share/man/man1/mate-geyes-applet.1*
+	rm -fv  debian/*/usr/share/man/man1/mate-multiload-applet.1*
+	rm -fv  debian/*/usr/share/man/man1/mateweather.1*
+
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
