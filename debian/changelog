@@ -1,17 +1,26 @@
-mate-applets (1.24.0-1) UNRELEASED; urgency=medium
+mate-applets (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
     + Add Rules-Requires-Root: field and set it to no.
     + Bump Standards-Version: to 4.5.0. No changes needed.
+    + Update versioned B-D on mate-common (>= 1.24.0-1~).
   * debian/upstream/metadata:
     + Drop obsolete fields Contact: and Name:.
     + Append .git suffix to URLs in Repository: field.
+  * debian/rules:
+    + Remove superfluous man pages.
 
   [ Martin Wimpress ]
   * New upstream release.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+    + Add B-D policykit-1.
+  * debian/rules:
+    + Remove obsolete -with-cpufreq-lib=cpupower.
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Thu, 13 Feb 2020 08:05:29 +0000
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 14 Feb 2020 14:26:34 +0100
 
 mate-applets (1.22.2-1) unstable; urgency=medium
 
