@@ -1,8 +1,13 @@
-mate-applets (1.24.1-1) UNRELEASED; urgency=medium
+mate-applets (1.24.1-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Fri, 14 Aug 2020 15:47:46 +0100
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 21 Aug 2020 23:48:34 +0200
 
 mate-applets (1.24.0-1) unstable; urgency=medium
 
